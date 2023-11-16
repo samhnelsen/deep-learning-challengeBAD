@@ -37,7 +37,7 @@ To power and form this classifier, I used a csv provided by Alphabet Soup's busi
      * Layer 2: hidden node = 20, activation = "sigmoid"
      * Output Layer: node = 1 (since this is a binary classifier), activation = "sigmoid"
      * __Results__: 72.8% accuracy
-    ![2nd Attempt](Screenshot 2023-11-16 at 8.12.18 AM.png)
+    ![2nd Attempt](https://github.com/samhnelsen/deep-learning-challenge/blob/main/Screenshot%202023-11-16%20at%208.12.18%E2%80%AFAM.png?raw=true)
 
 * For my third attempt, I added another layer, changed node values, and experimented with changing activation functions. 
     * Layer 1: hidden node = 81, activation = "relu"
@@ -45,10 +45,10 @@ To power and form this classifier, I used a csv provided by Alphabet Soup's busi
     * Layer 3: hidden node = 18, activation = "relu"
     * Output Layer: node = 1 (since this is a binary classifier), activation = "relu"
     * __Results__: 72.7% accuracy
-    ![3rd Attempt](Screenshot 2023-11-16 at 8.16.25 AM.png)
+    ![3rd Attempt](https://github.com/samhnelsen/deep-learning-challenge/blob/main/Screenshot%202023-11-16%20at%208.16.25%E2%80%AFAM.png?raw=true)
 
 * After my manual experimentation actually resulted in worst results with every attempt, I installed Keras Tuner to optimize my model and find the best set of parameters. The tuner found three models that produced the highest accuracy:
-![Keras Tuner](Screenshot 2023-11-16 at 8.20.47 AM.png)
+![Keras Tuner](https://github.com/samhnelsen/deep-learning-challenge/blob/main/Screenshot%202023-11-16%20at%208.20.47%E2%80%AFAM.png?raw=true)
 
 * Despite my efforts, I wasn't able to get my accuracy score past the 75% threshold. 
 
