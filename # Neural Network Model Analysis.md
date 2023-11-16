@@ -10,8 +10,8 @@ To power and form this classifier, I used a csv provided by Alphabet Soup's busi
 
 ### Data Preprocessing 
 
-    * Target variable: `IS_SUCCESSFUL` - was the money used effectively
-    * Feature variables:  
+* Target variable: `IS_SUCCESSFUL` - was the money used effectively
+* Feature variables:  
                           *`APPLICATION_TYPE` — Alphabet Soup application type
                           *`AFFILIATION` — Affiliated sector of industry
                           *`CLASSIFICATION` — Government organization classification
@@ -21,36 +21,36 @@ To power and form this classifier, I used a csv provided by Alphabet Soup's busi
                           *`INCOME_AMT` — Income classification
                           *`SPECIAL_CONSIDERATIONS` — Special considerations for application
                           * `ASK_AMT` — Funding amount requested
-    * Removed variables: `EIN` and `NAME` were dropped as they were non-beneficial
+* Removed variables: `EIN` and `NAME` were dropped as they were non-beneficial
 
 ### Compiling, Training, and Evaluating the Model
 
-    * My first attempt at a model was fairly random:
-        * Layer 1: hidden node = 23, activation = "relu"
-        * Layer 2: hidden node = 7, activation = "relu"
-        * Output Layer: node = 1 (since this is a binary classifier), activation = "sigmoid"
-        * __Results__: 73% accuracy
+* My first attempt at a model was fairly random:
+    * Layer 1: hidden node = 23, activation = "relu"
+    * Layer 2: hidden node = 7, activation = "relu"
+    * Output Layer: node = 1 (since this is a binary classifier), activation = "sigmoid"
+    * __Results__: 73% accuracy
     ![1st Attempt](Screenshot 2023-11-16 at 7.46.50 AM.png)
     
-    * For my second attempt, I tried to increase the accuracy by increasing the node values for my first two layers and changing one of the activation functions. 
-        * Layer 1: hidden node = 50, activation = "relu"
-        * Layer 2: hidden node = 20, activation = "sigmoid"
-        * Output Layer: node = 1 (since this is a binary classifier), activation = "sigmoid"
-        * __Results__: 72.8% accuracy
+* For my second attempt, I tried to increase the accuracy by increasing the node values for my first two layers and changing one of the activation functions. 
+     * Layer 1: hidden node = 50, activation = "relu"
+     * Layer 2: hidden node = 20, activation = "sigmoid"
+     * Output Layer: node = 1 (since this is a binary classifier), activation = "sigmoid"
+     * __Results__: 72.8% accuracy
     ![2nd Attempt](Screenshot 2023-11-16 at 8.12.18 AM.png)
 
-    * For my third attempt, I added another layer, changed node values, and experimented with changing activation functions. 
-        * Layer 1: hidden node = 81, activation = "relu"
-        * Layer 2: hidden node = 33, activation = "sigmoid"
-        * Layer 3: hidden node = 18, activation = "relu"
-        * Output Layer: node = 1 (since this is a binary classifier), activation = "relu"
-        * __Results__: 72.7% accuracy
+* For my third attempt, I added another layer, changed node values, and experimented with changing activation functions. 
+    * Layer 1: hidden node = 81, activation = "relu"
+    * Layer 2: hidden node = 33, activation = "sigmoid"
+    * Layer 3: hidden node = 18, activation = "relu"
+    * Output Layer: node = 1 (since this is a binary classifier), activation = "relu"
+    * __Results__: 72.7% accuracy
     ![3rd Attempt](Screenshot 2023-11-16 at 8.16.25 AM.png)
 
-    * After my manual experimentation actually resulted in worst results with every attempt, I installed Keras Tuner to optimize my model and find the best set of parameters. The tuner found three models that produced the highest accuracy:
-    ![Keras Tuner](Screenshot 2023-11-16 at 8.20.47 AM.png)
+* After my manual experimentation actually resulted in worst results with every attempt, I installed Keras Tuner to optimize my model and find the best set of parameters. The tuner found three models that produced the highest accuracy:
+![Keras Tuner](Screenshot 2023-11-16 at 8.20.47 AM.png)
 
-    * Despite my efforts, I wasn't able to get my accuracy score past the 75% threshold. 
+* Despite my efforts, I wasn't able to get my accuracy score past the 75% threshold. 
 
 ## Summary
 
