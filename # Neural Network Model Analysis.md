@@ -30,7 +30,7 @@ To power and form this classifier, I used a csv provided by Alphabet Soup's busi
     * Layer 2: hidden node = 7, activation = "relu"
     * Output Layer: node = 1 (since this is a binary classifier), activation = "sigmoid"
     * __Results__: 73% accuracy
-    ![1st Attempt](Screenshot 2023-11-16 at 7.46.50 AM.png)
+    ![1st Attempt](./deep-learning-challenge/Screenshot 2023-11-16 at 7.46.50 AM.png)
     
 * For my second attempt, I tried to increase the accuracy by increasing the node values for my first two layers and changing one of the activation functions. 
      * Layer 1: hidden node = 50, activation = "relu"
